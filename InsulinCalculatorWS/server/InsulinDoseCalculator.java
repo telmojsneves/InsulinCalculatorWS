@@ -6,7 +6,7 @@ import javax.jws.WebMethod;
 import java.lang.*;
 
 @WebService
-public class InsulinWS {
+public class InsulinDoseCalculator {
 
 	/**
 	 * Calculates the number of insulin units needed after one meal.
@@ -47,6 +47,7 @@ public class InsulinWS {
 									int targetBloodSugar,
 									int personalSensitivity){
 
+		//apply a range to this
 		double carbohydrateAmountDouble = CheckAndTransform(carbohydrateAmount, 60, 120);
 		double carbohydrateToInsulinRatioDouble = CheckAndTransform(carbohydrateToInsulinRatio, 10, 15);
 		double preMealBloodSugarDouble = CheckAndTransform(preMealBloodSugar, 120, 250);
@@ -274,7 +275,9 @@ public class InsulinWS {
 		what to Test
 			parameters income
 			if they exist, or not, if they are in correct type
+			test linear regression input and results
 			the output is well performed
+
 
 	*/
 

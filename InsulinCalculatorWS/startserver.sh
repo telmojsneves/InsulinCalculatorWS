@@ -1,4 +1,4 @@
 javac server/*.java
-wsgen -cp . server.InsulinWS
+wsgen -cp . server.InsulinDoseCalculator
 java -cp . server.InsulinEndpoint
 
