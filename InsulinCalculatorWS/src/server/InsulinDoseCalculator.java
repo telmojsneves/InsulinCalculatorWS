@@ -153,7 +153,7 @@ public class InsulinDoseCalculator implements InsulinDoseCalculatorInterface{
 
 		}
 
-		double physicalActivityLevelDouble = CheckAndTransform(physicalActivityLevel, 2, 10);
+		double physicalActivityLevelDouble = CheckAndTransform(physicalActivityLevel, 0, 10);
 
 		//TODO validate each element of each array
 
